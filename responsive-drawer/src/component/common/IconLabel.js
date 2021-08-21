@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./iconLabel.css";
 const IconLabel = ({ Icon, label }) => {
   return (
     <div>

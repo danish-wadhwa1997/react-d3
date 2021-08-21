@@ -1,5 +1,7 @@
 @import "./colors.css";
 @import "./grid.css";
+
+/* common assets */
 .left-border-box {
   display: block;
   border-top: 0px;
@@ -54,25 +56,18 @@
 .primary-button .icon {
   margin-left: 1rem;
 }
+
 .primary-button:hover {
   background-color: var(--dark-color);
   color: var(--secondary-color);
 }
-.icon-right-margin {
-  margin-right: 0.5rem;
-}
-.label-vertical-align {
-  vertical-align: text-top;
-}
+
 .secondary-button {
   background-color: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
   color: var(--dark-color);
-}
-.secondary-button:hover {
-  color: var(--secondary-color);
 }
 
 h1 {
@@ -92,7 +87,10 @@ h3 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 35px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
