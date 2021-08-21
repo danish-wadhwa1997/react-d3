@@ -7,20 +7,21 @@ import ExitIcon from "../assets/ExitIcon";
 import SettingIcon from "../assets/SettingIcon";
 import HomeIcon from "../assets/HomeIcon";
 import UserIcon from "../assets/UserIcon";
+import IconLabel from "./IconLabel";
 const SideDrawer = ({ open, toggleSideDrawer }) => {
   return (
     <div className={`side-drawer ${open ? "open" : ""}`}>
       <nav className="side-drawer-header">
         <div id="profile-links">
           <div id="logo-sidebar">
-            <Logo fill="var(--highlight-color)" />
+            <Logo fill="var(--secondary-color)" />
           </div>
           <div>
             <a>Hello, LiQid</a>
           </div>
         </div>
         <button id="close-icon" onClick={toggleSideDrawer}>
-          <CloseIcon stroke="var(--primary-text-color)" />
+          <CloseIcon stroke="var(--primary-color)" />
         </button>
       </nav>
 
@@ -28,40 +29,28 @@ const SideDrawer = ({ open, toggleSideDrawer }) => {
         <ul>
           <li>
             <a>
-              <span className="side-drawer-nav-icon">
-                <ExitIcon fill="var(--primary-text-color)" />
-              </span>
-              <span>Logout</span>
+              <IconLabel label="Logout" Icon={ExitIcon} />
             </a>
           </li>
           <li>
             <a>
-              <span className="side-drawer-nav-icon">
-                <HomeIcon fill="var(--primary-text-color)" />
-              </span>
-              <span>Home</span>
+              <IconLabel label="Home" Icon={HomeIcon} />
             </a>
           </li>
           <li>
             <a>
-              <span className="side-drawer-nav-icon">
-                <UserIcon fill="var(--primary-text-color)" />
-              </span>
-              <span>Profile</span>
+              <IconLabel label="Profile" Icon={UserIcon} />
             </a>
           </li>
           <li>
             <a>
-              <span className="side-drawer-nav-icon">
-                <SettingIcon fill="var(--primary-text-color)" />
-              </span>
-              <span>Setting</span>
+              <IconLabel label="Setting" Icon={SettingIcon} />
             </a>
           </li>
         </ul>
       </div>
       <footer className="side-drawer-footer">
-        <FooterLogo fill="var(--primary-text-color)" />
+        <FooterLogo fill="var(--primary-color)" />
       </footer>
     </div>
   );

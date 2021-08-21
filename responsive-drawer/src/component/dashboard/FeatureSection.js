@@ -1,4 +1,5 @@
 import React from "react";
+import RightArrowIcon from "../assets/RightArrowIcon";
 
 const FeatureSection = () => {
   return (
@@ -32,7 +33,10 @@ const FeatureSection = () => {
           style={{ flexGrow: 1 }}
           className="primary-button left-bottom-round-button"
         >
-          Explore
+          <span>Explore</span>
+          <span className="icon">
+            <RightArrowIcon stroke="var(--primary-color)" />
+          </span>
         </button>
       </div>
     </section>

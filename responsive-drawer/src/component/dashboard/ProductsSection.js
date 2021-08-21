@@ -1,4 +1,5 @@
 import React from "react";
+import RightArrowIcon from "../assets/RightArrowIcon";
 
 const ProductsSection = () => {
   return (
@@ -8,7 +9,9 @@ const ProductsSection = () => {
           Your products
         </h1>
         <div>charts</div>
-        <button className="secondary-button">full</button>
+        <button className="secondary-button">
+          <RightArrowIcon stroke="var(--dark-color)" />
+        </button>
       </div>
     </article>
   );

@@ -4,7 +4,7 @@ import FooterLogo from "../assets/FooterLogo";
 const Footer = () => {
   return (
     <footer id="footer-log">
-      <FooterLogo fill="var(--highlight-color)" />
+      <FooterLogo fill="var(--secondary-color)" />
     </footer>
   );
 };

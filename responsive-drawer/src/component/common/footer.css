@@ -1,5 +1,5 @@
 #footer-log {
-  background-color: var(--toolbar-background-color);
+  background-color: var(--dark-color);
   display: flex;
   flex-direction: row;
   align-items: center;

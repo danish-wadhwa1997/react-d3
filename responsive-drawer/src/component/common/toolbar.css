@@ -1,28 +1,29 @@
 #toolbar-big {
-  background-color: var(--toolbar-background-color);
-  color: var(--primary-text-color);
+  background-color: var(--dark-color);
+  color: var(--primary-color);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 0vw 1vw;
 }
+
 #toolbar-small {
   display: none;
 }
 
-a {
+#toolbar-big a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--primary-color);
   padding: 0px 1vw;
 }
-a.active {
-  color: var(--highlight-color);
+a:active {
+  color: var(--secondary-color);
 }
 
 a:hover,
 a:active {
-  color: var(--highlight-color);
+  color: var(--secondary-color);
 }
 
 ul {
@@ -34,7 +35,7 @@ ul {
 
 #logo {
   display: inline-block;
-  background-color: var(--highlight-color);
+  background-color: var(--secondary-color);
   padding: 10px;
   max-width: fit-content;
   border-radius: 50%;
@@ -61,8 +62,8 @@ ul {
     display: none;
   }
   #toolbar-small {
-    background-color: var(--toolbar-background-color);
-    color: var(--primary-text-color);
+    background-color: var(--dark-color);
+    color: var(--primary-color);
     display: flex;
     flex-direction: row;
     align-items: center;
