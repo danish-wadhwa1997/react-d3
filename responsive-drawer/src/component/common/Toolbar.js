@@ -51,9 +51,9 @@ const Toolbar = (props) => {
           </div>
         </div>
         <div id="page-links">
-          <div id="hamburger">
+          <button id="hamburger" onClick={props.toggleSideDrawer}>
             <HamburgerIcon stroke="var(--highlight-color)" />
-          </div>
+          </button>
         </div>
       </nav>
     </header>

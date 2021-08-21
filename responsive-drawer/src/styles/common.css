@@ -1,3 +1,5 @@
+@import "./colors.css";
+@import "./grid.css";
 .left-border-box {
   display: block;
   border-top: 0px;

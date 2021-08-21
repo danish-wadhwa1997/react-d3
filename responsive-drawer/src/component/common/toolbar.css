@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5vw 1vw;
+  padding: 0vw 1vw;
 }
 #toolbar-small {
   display: none;
@@ -52,6 +52,7 @@ ul {
 #hamburger {
   margin: 0px 1rem;
   cursor: pointer;
+  border: none;
 }
 
 /* Extra small devices (phones, 600px and down) */

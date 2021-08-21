@@ -7,9 +7,9 @@ import ExitIcon from "../assets/ExitIcon";
 import SettingIcon from "../assets/SettingIcon";
 import HomeIcon from "../assets/HomeIcon";
 import UserIcon from "../assets/UserIcon";
-const SideDrawer = () => {
+const SideDrawer = ({ open, toggleSideDrawer }) => {
   return (
-    <div className="side-drawer">
+    <div className={`side-drawer ${open ? "open" : ""}`}>
       <nav className="side-drawer-header">
         <div id="profile-links">
           <div id="logo-sidebar">
@@ -19,9 +19,9 @@ const SideDrawer = () => {
             <a>Hello, LiQid</a>
           </div>
         </div>
-        <div id="close-icon">
+        <button id="close-icon" onClick={toggleSideDrawer}>
           <CloseIcon stroke="var(--primary-text-color)" />
-        </div>
+        </button>
       </nav>
 
       <div className="side-drawer-content">
