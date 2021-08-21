@@ -1,16 +1,10 @@
-[class*="col-"] {
-  width: 100%;
-  float: left;
-  padding: 15px;
-}
-
 .left-border-box {
   display: block;
   border-top: 0px;
   border-bottom: 0px;
   border-right: 0px;
   border-left: 1px solid;
-  padding: 1vw 5vw;
+  padding: 5px 20px;
 }
 
 .flex-column {
@@ -19,6 +13,12 @@
   justify-content: center;
   align-items: stretch;
 }
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
 .flex-column .flex-grow {
   flex-grow: 1;
@@ -26,9 +26,9 @@
 .card {
   background-color: var(--secondary-background-color);
   padding: 2rem;
-  margin: 3vw;
-  width: 330px;
-  height: 330px;
+  margin: 1vw;
+  width: 350px;
+  height: 350px;
 }
 
 .left-bottom-round {

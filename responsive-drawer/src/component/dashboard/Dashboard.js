@@ -6,9 +6,15 @@ import ProductsSection from "./ProductsSection";
 
 const Dashboard = () => {
   return (
-    <section className="row">
-      <WelcomeSection />
-      <FeatureSection />
+    <section>
+      <div className="row">
+        <div className="col-xs-12 col-xl-6">
+          <WelcomeSection />
+        </div>
+        <div className="col-xs-12 col-xl-6">
+          <FeatureSection />
+        </div>
+      </div>
       <ProductsSection />
     </section>
   );

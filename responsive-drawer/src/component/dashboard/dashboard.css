@@ -1,29 +1,24 @@
 @import "../../styles/colors.css";
 @import "../../styles/common.css";
 
+/* sections of dashboard */
 #welcome-section {
   background-color: var(--ternary-background-color);
   color: var(--primary-text-color);
-  padding: 30px;
-  border-color: var(--primary-text-color);
+  padding: 20% 10%;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.justify-content-start {
+  justify-content: start;
+}
+
+.overflow-scroll {
+  overflow-y: scroll;
+}
+
+.align-items-center {
   align-items: center;
 }
-
-.heading {
-  font-weight: 300;
-  font-style: italic;
-}
-
-.highlight-heading {
-  color: var(--highlight-color);
-}
-
 #feature-section {
   display: flex;
   flex-direction: column;
@@ -36,6 +31,15 @@
 #products-section {
   background-color: var(--secondary-background-color);
   padding: 30px;
+}
+
+.heading {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.highlight-heading {
+  color: var(--highlight-color);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -69,5 +73,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
+  }
+  #feature-section {
+    margin: 10% 0%;
   }
 }
