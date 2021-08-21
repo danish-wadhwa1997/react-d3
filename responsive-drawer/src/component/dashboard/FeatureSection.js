@@ -3,7 +3,7 @@ import React from "react";
 const FeatureSection = () => {
   return (
     <section id="feature-section">
-      <div className="card flex-column justify-content-start overflow-scrol">
+      <div className="card flex-column justify-content-start overflow-scroll">
         <h3
           className="left-border-box heading highlight-heading"
           style={{ flexGrow: 1, marginTop: 0 }}
@@ -24,7 +24,7 @@ const FeatureSection = () => {
         >
           Stocks
         </h3>
-        <p style={{ flexGrow: 3 }}>
+        <p style={{ flexGrow: 8 }}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           fermentum elit id auctor mollis.
         </p>

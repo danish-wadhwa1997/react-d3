@@ -4,7 +4,7 @@
   border-bottom: 0px;
   border-right: 0px;
   border-left: 1px solid;
-  padding: 5px 20px;
+  padding: 0px 20px;
 }
 
 .flex-column {
@@ -43,12 +43,22 @@
   background-color: var(--highlight-color);
   color: var(--primary-text-color);
   padding: 10px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: var(--toolbar-background-color);
+  color: var(--highlight-color);
 }
 
 .secondary-button {
   background-color: transparent;
   border: none;
   padding: 10px;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  color: var(--highlight-color);
 }
 
 h1 {

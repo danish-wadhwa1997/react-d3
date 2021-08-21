@@ -13,8 +13,10 @@ const Toolbar = (props) => {
             <li>
               <a>Hello, LiQid</a>
             </li>
-            <li className="left-border-box">
-              <a> Logout</a>
+            <li>
+              <a>
+                <div className="left-border-box">Logout</div>
+              </a>
             </li>
           </ul>
         </div>
