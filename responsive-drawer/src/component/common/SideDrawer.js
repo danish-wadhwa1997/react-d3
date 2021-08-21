@@ -12,7 +12,7 @@ const SideDrawer = ({ open, toggleSideDrawer }) => {
   return (
     <div className={`side-drawer ${open ? "open" : ""}`}>
       <nav className="side-drawer-header">
-        <div id="profile-links">
+        <div id="side-drawer-profile-links" className="flex-row">
           <div id="logo-sidebar">
             <Logo fill="var(--secondary-color)" />
           </div>
@@ -26,7 +26,7 @@ const SideDrawer = ({ open, toggleSideDrawer }) => {
       </nav>
 
       <div className="side-drawer-content">
-        <ul>
+        <ul className="flex-column">
           <li>
             <a>
               <IconLabel label="Logout" Icon={ExitIcon} />
@@ -49,7 +49,7 @@ const SideDrawer = ({ open, toggleSideDrawer }) => {
           </li>
         </ul>
       </div>
-      <footer className="side-drawer-footer">
+      <footer className="side-drawer-footer flex-row">
         <FooterLogo fill="var(--primary-color)" />
       </footer>
     </div>
