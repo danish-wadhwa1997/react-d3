@@ -1,0 +1,8 @@
+#footer-log {
+  background-color: var(--toolbar-background-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
