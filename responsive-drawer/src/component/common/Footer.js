@@ -1,10 +1,10 @@
 import React from "react";
-import { ReactComponent as FooterLogo } from "../../assets/footer-logo.svg";
 import "./footer.css";
+import FooterLogo from "../assets/FooterLogo";
 const Footer = () => {
   return (
     <footer id="footer-log">
-      <FooterLogo />
+      <FooterLogo fill="var(--highlight-color)" />
     </footer>
   );
 };

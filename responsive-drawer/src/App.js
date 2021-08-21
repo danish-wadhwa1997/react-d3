@@ -3,10 +3,12 @@ import React from "react";
 import Footer from "./component/common/Footer";
 import Dashboard from "./component/dashboard/Dashboard";
 import "./styles/grid.css";
+import SideDrawer from "./component/common/SideDrawer";
 function App() {
   return (
-    <div className="App">
+    <div style={{ height: "100%" }}>
       <Toolbar />
+      <SideDrawer />
       <Dashboard />
       <Footer />
     </div>

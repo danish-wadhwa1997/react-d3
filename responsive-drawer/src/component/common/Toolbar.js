@@ -1,13 +1,15 @@
 import React from "react";
 import "./toolbar.css";
-import { ReactComponent as Logo } from "../../assets/nav-logo.svg";
+import HamburgerIcon from "../assets/HamburgerIcon";
+import Logo from "../assets/Logo";
+import ExitIcon from "../assets/ExitIcon";
 const Toolbar = (props) => {
   return (
     <header>
-      <nav className="toolbar-big">
+      <nav id="toolbar-big">
         <div id="profile-links">
           <div id="logo">
-            <Logo />
+            <Logo fill="var(--primary-text-color)" />
           </div>
           <ul>
             <li>
@@ -15,7 +17,12 @@ const Toolbar = (props) => {
             </li>
             <li>
               <a>
-                <div className="left-border-box">Logout</div>
+                <div className="left-border-box">
+                  <span className="side-drawer-nav-icon">
+                    <ExitIcon fill="var(--primary-text-color)" />
+                  </span>
+                  Logout
+                </div>
               </a>
             </li>
           </ul>
@@ -32,6 +39,21 @@ const Toolbar = (props) => {
               <a href="/">About Us</a>
             </li>
           </ul>
+        </div>
+      </nav>
+      <nav id="toolbar-small">
+        <div id="profile-links">
+          <div id="logo">
+            <Logo fill="var(--primary-text-color)" />
+          </div>
+          <div>
+            <a>Hello, LiQid</a>
+          </div>
+        </div>
+        <div id="page-links">
+          <div id="hamburger">
+            <HamburgerIcon stroke="var(--highlight-color)" />
+          </div>
         </div>
       </nav>
     </header>
