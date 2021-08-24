@@ -13,9 +13,9 @@ const RightArrowIcon = ({ stroke }) => {
       strokeWidth="1.5px"
     >
       <g transform="translate(-172.75 -1692.439)">
-        <line class="a" x2="23" transform="translate(173.5 1699.5)" />
-        <line class="a" y1="6" x2="6" transform="translate(190.5 1699.5)" />
-        <line class="a" x2="6" y2="6" transform="translate(190.5 1693.5)" />
+        <line className="a" x2="23" transform="translate(173.5 1699.5)" />
+        <line className="a" y1="6" x2="6" transform="translate(190.5 1699.5)" />
+        <line className="a" x2="6" y2="6" transform="translate(190.5 1693.5)" />
       </g>
     </svg>
   );

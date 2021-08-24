@@ -1,0 +1,20 @@
+.investment-chart {
+  text-align: center;
+  overflow-x: auto;
+  width: 100vw;
+}
+
+#myTooltip {
+  position: absolute;
+  text-align: left;
+  width: fit-content;
+  height: auto;
+  min-height: 20px;
+  padding: 1vw;
+  font-size: small;
+  background-color: var(--primary-color);
+  border-radius: 0px 0px 0px 8px;
+  pointer-events: none;
+  box-shadow: 0px 0px 5px var(--dark-color);
+  overflow: auto;
+}
