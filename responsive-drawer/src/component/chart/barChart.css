@@ -1,7 +1,7 @@
 .investment-chart {
   text-align: center;
   overflow-x: auto;
-  width: 100vw;
+  width: 100%;
 }
 
 #myTooltip {
